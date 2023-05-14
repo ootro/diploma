@@ -1,10 +1,9 @@
 import { Typography, Button, Box } from "@mui/material";
-import CompaniesPage from "../CompaniesPage";
 
 function HomePage() {
   return (
     <>
-      <Typography align="center" variant='inherit' component="div" sx={{textTransform: 'uppercase', fontWeight: '700', fontSize: '50px'}}>
+      <Typography marginTop={'80px'} align="center" variant='inherit' component="div" sx={{textTransform: 'uppercase', fontWeight: '700', fontSize: '50px'}}>
         Інформаційна система зареєстрованих підприємців
       </Typography>
       <Box sx={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', height: '38vw', marginTop: '25px'}}>

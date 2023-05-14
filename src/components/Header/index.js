@@ -38,21 +38,21 @@ function Header() {
     ];
 
     return (
-        <Box sx={{marginBottom: '5.5rem'}}>
+        <Box sx={{marginBottom: '4.1rem'}}>
             <AppBar color='primary' sx={{color: 'white', height: '4rem'}}>
                 <Toolbar sx={{height: '100%'}}>
-                <List sx={{display: 'flex', justifyContent: breakpointsDownMd ? 'space-between' : 'start', fontSize: '15px', width: '100%'}}>
-                    {pages.map((page) => {
-                        return (
-                            <Box key={page.id} sx={{width: '100px'}}>
-                                <ListItemButton component={Link} to={page.path} key={page.id} sx={{display: 'flex', justifyContent:'center'}}>
-                                    <Typography key={page.id} variant='inherit' color='secondary' component="div" sx={{textTransform: 'uppercase', fontWeight: '700'}}>
-                                        {page.name}
-                                    </Typography>
-                                </ListItemButton>
-                            </Box>
-                        )
-                    })}
+                    <List sx={{display: 'flex', justifyContent: breakpointsDownMd ? 'space-between' : 'start', fontSize: '15px', width: '100%'}}>
+                        {pages.map((page) => {
+                            return (
+                                <Box key={page.id} sx={{width: '100px'}}>
+                                    <ListItemButton component={Link} to={page.path} key={page.id} sx={{display: 'flex', justifyContent:'center'}}>
+                                        <Typography key={page.id} variant='inherit' color='secondary' component="div" sx={{textTransform: 'uppercase', fontWeight: '700'}}>
+                                            {page.name}
+                                        </Typography>
+                                    </ListItemButton>
+                                </Box>
+                            )
+                        })}
                     </List>
                 </Toolbar>
             </AppBar>
