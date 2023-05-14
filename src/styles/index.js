@@ -31,6 +31,17 @@ const overrides = {
         }
       }
     },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: '#572ca0',
+          '&:hover': {
+            background: "#572ca0",
+            color: '#d8f3dc'
+         },
+        }
+      }
+    }
   }
 };
 
